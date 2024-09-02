@@ -1,4 +1,4 @@
-const esperarSegundos = (tiempo, texto) => {
+const esperarSegundos = (tiempo, texto, index) => {
   setTimeout(() => {
     console.log(
       "___________________________________________________________________________________"
@@ -8,10 +8,10 @@ const esperarSegundos = (tiempo, texto) => {
       `han pasado ${tiempo} milesimas de segundo`
     );
     console.log(
-      "_______________________________________________________________________________"
+      "____________________________________________________________________________________"
     );
 
-    console.log(texto);
+    console.log(index, texto);
   }, tiempo);
 };
 
