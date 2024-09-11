@@ -1,0 +1,28 @@
+# dependencias instaladas
+/node_modules
+
+# archivos de regsitro y datos 
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+#  Carpeta de compilacion
+
+/build
+
+# Carpeta de cobertura creada en pruebas 
+
+/coverage
+
+# Carpeta .env
+
+.env
+
+# Archivos generados por el sistema operativo
+
+.DS store
+Thumbs.db
