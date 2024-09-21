@@ -43,14 +43,14 @@ app.post("/students", (req, res) => {
   students.push(req.body);
   res.send(`Se ha agregado el estudiante ${req.body.title}`);
 });
-//aca se actualizan o editan los estudiantes 
+//aca se actualizan o editas los estudiantes
 app.put("/students/:id", (req, res) => {
   const id = req.params.id;
   const index = students.findIndex((student) => student.id === parseInt(id));
   students[index] = req.body;
   res.send("Se ha actualizado el Estudiante");
 });
-
+// asi debes digitar en postman= http://localhost:3002/students
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
